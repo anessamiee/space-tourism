@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+
+@layer components {
+  .subh1 {
+    @apply text-[1.75rem] font-Bellefair uppercase;
+  }
+  .subh2 {
+    @apply text-sm tracking-[0.147rem] font-BarlowCondensed text-blue-light uppercase;
+  }
+  .nav-text {
+    @apply text-sm md:text-base tracking-[0.148rem] md:tracking-[0.169rem] font-BarlowCondensed border-b-[3px] border-white-warm border-opacity-0 hover:border-opacity-50 uppercase transition-all focus:hover:border-opacity-100 cursor-pointer;
+  }
+}
+
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Bellefair';
+  src: url('../src/fonts/Bellefair/Bellefair-Regular.ttf');
+  font-display: block;
+}
+@font-face {
+  font-family: 'Barlow';
+  src: url('../src/fonts/Barlow/Barlow-Regular.ttf');
+  font-display: block;
+}
+@font-face {
+  font-family: 'Barlow Condensed';
+  src: url('../src/fonts/BarlowCondensed/BarlowCondensed-Regular.ttf');
+  font-display: block;
+}
+@font-face {
+  font-family: 'Barlow Condensed';
+  src: url('../src/fonts/BarlowCondensed/BarlowCondensed-Bold.ttf');
+  font-weight: bold;
+  font-display: block;
+}
+
+@layer base {
+  body,
+  html {
+    @apply bg-blue-dark m-0 p-0 text-white-warm h-full w-full overflow-auto overflow-x-hidden antialiased;
+  }
+  h1 {
+    @apply text-[5rem] md:text-[9.375rem] font-Bellefair uppercase;
+  }
+  h2 {
+    @apply text-[3.5rem] md:text-[5rem] lg:text-[6.25rem] font-Bellefair uppercase;
+  }
+  h3 {
+    @apply text-2xl md:text-[2.5rem] lg:text-5xl xl:text-[3.5rem] font-Bellefair uppercase;
+  }
+  h4 {
+    @apply text-base md:text-2xl lg:text-[2rem] font-Bellefair uppercase;
+  }
+  h5 {
+    @apply text-base md:text-xl lg:text-[1.75rem] tracking-[0.169rem] md:tracking-[0.211rem] lg:tracking-[0.297rem] font-BarlowCondensed uppercase;
+  }
+  p {
+    @apply text-[0.938rem] md:text-base lg:text-lg font-Barlow text-blue-light;
+  }
+}
+html {
+  font-family: 'Bellefair', serif;
+}
